@@ -15,6 +15,7 @@ section {
 
 #main {
     background-image: url(img/bgMAIN.png);
+    position: relative;
 }
 
 #about {
@@ -75,12 +76,12 @@ section {
     height: 60px;
     border-radius: 100px;
     border: 2px solid #000;
-    background-color: #BBFF2C;
+    background: #BBFF2C;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
     box-shadow: 5px 5px 0 #000000;
+    margin-top: 20px;
 }
 
 .button a {
@@ -96,9 +97,12 @@ section {
     background: #a0d826;
 }
 
-.planet-img{
+.planet-img {
     width: 405px;
     height: 330px;
-    margin-left: 20px;
+    right: 20px;
+    position: absolute;
     transform: rotate(176deg);
+    top: 50%;
+    transform: translateY(-50%);
 }
