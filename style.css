@@ -96,8 +96,7 @@ section {
     background: #a0d826;
 }
 
-#main {
-    background-image: url(planet.png);
+.planet-img{
     width: 405px;
     height: 330px;
     margin-left: 20px;
