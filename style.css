@@ -392,8 +392,10 @@ nav {
 }
 
 .logo {
-    width: 200px;
+    width: 150px;
     height: auto;
+    padding-left: 30px;
+    padding-top: 30px;
 }
 
 .active {
@@ -407,12 +409,6 @@ nav {
 
     .nav-links {
         display: none;
-    }
-
-    .logo {
-        font-size: 40px;
-        padding-left: 20px;
-        padding-top: 10px;
     }
 
     .main-content {
@@ -508,6 +504,14 @@ nav {
 
     .comment {
         background-image: url(img/comment-mobile.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        justify-content: start;
+        padding-top: 10px;
+    }
+
+    .comments-card {
+        margin-bottom: 10px;
     }
 
     .comment p {
@@ -525,12 +529,11 @@ nav {
         font-size: 15px;
     }
 
-    .mobile-button {
-        display: block;
-    }
-
     .logo {
-
+        width: 100px;
+        height: auto;
+        padding-left: 30px;
+        padding-top: 30px;
     }
 }
 
@@ -541,6 +544,11 @@ nav {
     right: 20px;
     padding-right: 25px;
     z-index: 999;
+    display: none;
+
+    @media (width<1000px) {
+        display: block;
+    }
 }
 
 .hide {
@@ -569,8 +577,3 @@ nav {
     width: 210px;
     height: 50px;
 }
-
-.off-scroll {
-    /* overflow: hidden; */
-}
-
